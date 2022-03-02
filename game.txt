@@ -28,8 +28,8 @@ int snakeWaterGun(char you, char comp){
     else if(you=='w' && comp=='g'){
         return 1;
     }
-
 }
+
 int main(){
     char you, comp;
     srand(time(0));
@@ -44,7 +44,6 @@ int main(){
     else{
         comp='g';
     }
-    
     printf("Enter 's' for snake, 'w' for water and 'g' for gun\n");
     scanf("%c", &you);
     int result = snakeWaterGun(you, comp);
